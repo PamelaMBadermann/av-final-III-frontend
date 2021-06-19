@@ -68,10 +68,12 @@ async function editarRecado(event) {
     event.preventDefault();
 
     try {
+        const id_recado = document.getElementById('id_recado').value;
         const titulo = document.getElementById('novoTitulo').value;
         const descricao = document.getElementById('novaDescricao').value;
         
         const { recado } = await axios.put('http://av-final-backend-api.herokuapp.com/recados', {
+            id_recado,
             titulo,
             descricao
         });
@@ -88,7 +90,7 @@ async function apagarRecado(event) {
     event.preventDefault();
 
     try {
-        const { recado } = await axios.delete('http://av-final-backend-api.herokuapp.com/recados');
+        const { id_recado } = await axios.delete('http://av-final-backend-api.herokuapp.com/recados');
     } catch (error) {
         alert('Erro ao apagar recado');
         return error;
