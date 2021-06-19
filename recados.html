@@ -27,9 +27,9 @@
             </div>
             <div class="form-group">
                 <div class="input-group d-flex">
-                    <input type="text" id="descricaoRecado" class="col-3" placeholder="Descrição"
+                    <input type="text" id="tituloRecado" class="col-3" placeholder="Descrição"
                         aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <input type="text" id="detalhesRecado" class="form-control" placeholder="Detalhamento"
+                    <input type="text" id="descricaoRecado" class="form-control" placeholder="Detalhamento"
                         aria-label="Recipient's username" aria-describedby="button-addon2">
                     <div class="input-group-append">
                         <button onclick="adicionarRecado(event)" class="btn btn-primary" type="button"
@@ -41,46 +41,13 @@
                 <thead>
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Descrição</th>
-                        <th scope="col">Detalhamento</th>
+                        <th scope="col">Título</th>
+                        <th scope="col">Descricão</th>
                         <th scope="col">Ação</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td id="descricaoRecado">Lavar as mãos</td>
-                        <td id="detalhesRecado">Lavar as mãos com agua e sabão</td>
-                        <td>
-                            <div class="btn-group" role="group" aria-label="Basic example">
-                                <button id="apagarRecadoBtn" onclick="apagarRecado()" type="button"
-                                    class="btn btn-danger">Limpar</button>
-                                <button type="button" id="exibirBtn" onclick="exibir()" class="btn btn-success"
-                                    data-toggle="modal" data-target="#exampleModal">Editar</button>
-                            </div>
-                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Lavar as mãos</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            Lavar as mãos com agua e sabão
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Save changes</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
+                <tbody id="listaRecados">
+                    
                 </tbody>
             </table>
         </main>
