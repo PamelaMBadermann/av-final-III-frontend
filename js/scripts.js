@@ -5,7 +5,7 @@ async function adicionarRecado(event) {
         const titulo = document.getElementById('tituloRecado').value;
         const descricao = document.getElementById('descricaoRecado').value;
 
-        const { recado } = await axios.post('http://av-final-backend-api.herokuapp.com/recados', { 
+        const { recado } = await axios.post('http://av-final-backend-api.herokuapp.com/', { 
             id_recado,
             titulo,
             descricao
@@ -72,7 +72,7 @@ async function editarRecado(event) {
         const titulo = document.getElementById('novoTitulo').value;
         const descricao = document.getElementById('novaDescricao').value;
         
-        const { recado } = await axios.put('http://av-final-backend-api.herokuapp.com/recados', {
+        const { recado } = await axios.put('http://av-final-backend-api.herokuapp.com/', {
             id_recado,
             titulo,
             descricao
@@ -90,7 +90,7 @@ async function apagarRecado(event) {
     event.preventDefault();
 
     try {
-        const { id_recado } = await axios.delete('http://av-final-backend-api.herokuapp.com/recados');
+        const { id_recado } = await axios.delete('http://av-final-backend-api.herokuapp.com/');
     } catch (error) {
         alert('Erro ao apagar recado');
         return error;
