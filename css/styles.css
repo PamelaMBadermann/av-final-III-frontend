@@ -1,0 +1,53 @@
+ * {
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #eeecdf;
+}
+
+.left {
+    background-image: url('../images/background-index.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.right {
+    background-color: #eeecdf;
+}
+
+img {
+    background-color: #eeecdf;
+}
+
+header {
+    background-image: url('../images/background-recados.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20vh;
+    color: #eeecdf;
+}
+
+.top-bar {
+    background-color: #000;
+    padding-left: 18px;
+    color: #eeecdf;
+    opacity: 0.9;
+    height: 4vh;
+}
+
+.margin {
+    margin: 2px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+main {
+    color: rgb(29, 29, 29);
+    height: 80vh;
+}
