@@ -5,8 +5,7 @@ async function adicionarRecado(event) {
         const titulo = document.getElementById('tituloRecado').value;
         const descricao = document.getElementById('descricaoRecado').value;
 
-        const { recado } = await axios.post('http://av-final-backend-api.herokuapp.com/', { 
-            id_recado,
+        const { recado } = await axios.post('http://av-final-backend-api.herokuapp.com/', {
             titulo,
             descricao
         });
