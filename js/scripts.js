@@ -9,7 +9,7 @@ async function adicionarRecado(event) {
             titulo,
             descricao
         });
-        
+
         const listaRecados = document.getElementById('listaRecados');
 
         console.log('recado adicionado com sucesso!');
